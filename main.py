@@ -3,9 +3,10 @@ import pandas
 import datetime as dt
 import random
 import smtplib
+import os
 
-MY_EMAIL = "aanyatester@gmail.com"
-MY_PWD = "swvk ldjh juns knkj"
+MY_EMAIL = os.environ.get("MY_EMAIL")
+MY_PASSWORD = os.environ.get("MY_PASSWORD")
 
 # 1. Update the birthdays.csv
 # This is OPTIONAL; Simpler Alternate: update file manually
