@@ -14,8 +14,8 @@ birthdays = pandas.DataFrame({
     "name": ["Mom", "Dad"],
     "email": ["aanyatester@gmail.com", "aanyatester@yahoo.com"],
     "year": [1970, 1971],
-    "month": [11, 6],
-    "day":[12, 30],
+    "month": [11, 7],
+    "day":[12, 1],
 })
 new_birthdays = birthdays.to_csv("birthdays.csv", mode="w", index=False)
 
