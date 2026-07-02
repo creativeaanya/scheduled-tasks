@@ -43,5 +43,5 @@ if birthday_exists:
     # 4. Send the letter generated in step 3 to that person's email address.
     with smtplib.SMTP("smtp.gmail.com",port=587) as connection:
         connection.starttls()
-        connection.login(user=MY_EMAIL, password=MY_PWD)
+        connection.login(user=MY_EMAIL, password=MY_PASSWORD)
         connection.sendmail(from_addr=MY_EMAIL,to_addrs=person_email,msg=f"Subject: Happy Birthday!!!\n\n{letter}")
